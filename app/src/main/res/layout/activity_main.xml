@@ -7,42 +7,81 @@
     tools:context=".view.MainActivity">
 
     <TextView
-        android:id="@+id/text_time"
+        android:id="@+id/text_time_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="@dimen/layout_margin"
         android:text="@string/default_time_format"
         android:textColor="@color/black"
-        android:textSize="45sp"
+        android:textSize="@dimen/timer_text_size"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button_start"
+        android:id="@+id/button_start_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="30dp"
+        android:layout_margin="@dimen/layout_margin"
         android:text="@string/start_button_text"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_time" />
+        app:layout_constraintTop_toBottomOf="@+id/text_time_1" />
 
     <Button
-        android:id="@+id/button_pause"
+        android:id="@+id/button_pause_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/pause_button_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/button_start" />
+        app:layout_constraintTop_toTopOf="@+id/button_start_1" />
 
     <Button
-        android:id="@+id/button_stop"
+        android:id="@+id/button_stop_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="30dp"
+        android:layout_marginEnd="@dimen/layout_margin"
         android:text="@string/stop_button_text"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/button_start" />
+        app:layout_constraintTop_toTopOf="@+id/button_start_1" />
+
+    <TextView
+        android:id="@+id/text_time_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin"
+        android:text="@string/default_time_format"
+        android:textColor="@color/black"
+        android:textSize="@dimen/timer_text_size"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_pause_1" />
+
+    <Button
+        android:id="@+id/button_start_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_margin"
+        android:text="@string/start_button_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_time_2" />
+
+    <Button
+        android:id="@+id/button_pause_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pause_button_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button_start_2" />
+
+    <Button
+        android:id="@+id/button_stop_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/layout_margin"
+        android:text="@string/stop_button_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button_start_2" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 
